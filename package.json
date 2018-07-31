@@ -1,0 +1,12 @@
+{
+  "name": "MyHomeschoolHub",
+  "version": "1.0.0",
+  "dependencies": {
+    "chimp": "^0.51.1",
+    "cucumber": "^4.2.1",
+    "npm": "^6.2.0"
+  },
+  "devDependencies": {
+    "webdriverio": "^4.13.1"
+  }
+}

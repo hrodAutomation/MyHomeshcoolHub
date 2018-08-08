@@ -2,9 +2,12 @@
   "name": "MyHomeschoolHub",
   "version": "1.0.0",
   "dependencies": {
+    "Faker": "^0.7.2",
+    "chai": "^4.1.2",
     "chimp": "^0.51.1",
     "cucumber": "^4.2.1",
-    "npm": "^6.2.0"
+    "faker": "^4.1.0",
+    "npm": "^6.3.0"
   },
   "devDependencies": {
     "webdriverio": "^4.13.1"

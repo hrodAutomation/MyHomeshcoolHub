@@ -1,4 +1,5 @@
 let Common = require('../../support/pages/common')
+let faker = require('faker')
 let min
 let max
 let randNum
@@ -28,10 +29,10 @@ class RegisterPage {
   }
 
   fillOutAccountDetails () {
-    this.userNameInputField.setValue('testUser1')
-    this.emailAddressInputField.setValue('homehubtestuser@gmail.com')
-    this.passwordInputField.setValue(set_password)
-    this.passwordConfirmationInputField.setValue(set_password)
+    this.userNameInputField.setValue('testUser ' + faker.random.number(1000))
+    this.emailAddressInputField.setValue('homehubtestuser+' + faker.random.number(1000) + '@gmail.com')
+    this.passwordInputField.setValue(Add Password)
+    this.passwordConfirmationInputField.setValue(Add Password)
   }
 
   fillOutName() {
@@ -44,7 +45,6 @@ class RegisterPage {
     global.userNameVisibility = browser.element(`//div[@id='field-visibility-settings-1']/fieldset//label[${randNum}]`).getText()
     console.log(global.userNameVisibility)
     browser.element(`//div[@id='field-visibility-settings-1']/fieldset//label[${randNum}]`).click()
-
   }
 
   fillOutBio () {

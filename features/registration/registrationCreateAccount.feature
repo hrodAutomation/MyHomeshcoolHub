@@ -1,4 +1,7 @@
-Feature:
+Feature: Profile creation
+  In order to
+  As a
+  I want to
 
 
   Scenario: Create an account

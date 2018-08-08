@@ -8,9 +8,9 @@ module.exports = function () {
   })
 
   this.When(/^I add the required account information$/, function () {
-    // RegisterPage.fillOutAccountDetails()
-    // RegisterPage.fillOutName()
-    // RegisterPage.selectCompleteSignUpButton()
+    RegisterPage.fillOutAccountDetails()
+    RegisterPage.fillOutName()
+    RegisterPage.selectCompleteSignUpButton()
   })
 
   this.Then(/^an account is created$/, function () {
